@@ -1,0 +1,321 @@
+/*CSS DOCUMENT*/
+
+/*gen styling*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: fit-content;
+    margin: auto;
+    background-image: url(../imgs/pexels-hitarth-jadhav-220357.jpg);
+    backdrop-filter: blur(7px);
+} /*opacity: 0.6;*/
+
+h1, h2 {
+    color: #fff;
+}
+
+h1:hover {
+    color: #ff4500;
+}
+
+p {
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #ff4500;
+}
+
+/*IMG STYLING, general and title keys*/
+.title-keys img {
+    margin: 0 auto;
+    padding: 3px;
+    width: 60px;
+    height: 60px;
+}
+
+ img::after {
+    clear: both;
+}
+
+.title-keys img:hover {
+    border: 2px solid #fff; /*spread*/
+    opacity: .8;
+}
+/*/IMG STYLING*/
+
+/*--------------------NAVBAR----------------*/
+.navbar {
+    position: fixed;
+    width: 100%;
+    border-top: 20px solid white;
+    border-right: 20px solid white;
+    border-left: 20px solid white;
+    background-color: black; /*add terminal img*/
+    opacity: 0.9;
+    z-index: 500;
+}
+
+.navbar::after {
+    clear: both;
+}
+
+.navbar li {
+    display: inline;
+    float: left;
+    list-style: none;
+    cursor: pointer;
+}
+
+.navbar a {
+    margin-right: 0;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    display: block;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    font-size: 2em;
+}
+
+.navbar a:hover {
+    color: #ff4500;
+}
+/*--------------NAVBAR END------------------*/
+
+/*--------------COVER----------*/
+.cover {
+    width: 100%;
+    height: 300px;
+    padding-top: 60px;
+    background-color: black;
+    opacity: 0.9;
+    border: 20px solid white;
+}
+
+.cover h2 {
+    padding-left: 5px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .9em;
+}
+
+.cover h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4em;
+}
+
+/*gif*/
+.cover a {
+    text-decoration: none;
+    font-size: small;
+    visibility: hidden;
+}
+
+.cover iframe {
+    filter: grayscale(100%);
+}
+
+.cover iframe:hover {
+    filter: grayscale(0%);
+}
+
+/*h1 portfolio animation work*/
+.blink {
+    animation: blink-animation 4s steps(6, start) infinite;
+    -webkit-animation: blink-animation 4s steps(6, start) infinite;
+}
+
+.sm-blink {
+    animation: blink-animation 1s steps(4, start) infinite;
+    -webkit-animation: blink-animation 1s steps(4, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+/*--------------/COVER-----------*/
+
+/*--------------CENTER COL----------*/
+.center-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    margin: 0 auto;
+    height: 400px;
+    width: 600px;
+    background-color: black;
+    opacity: 0.8;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(255,255,255, 0.8);
+}
+
+.txt {
+    width: 50%;
+}
+/*------------/CENTER COL-------------*/
+
+/*--------ABOUT-----------*/
+.about-txt p {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+/*-------git---------*/
+.git-logo img {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+.txt a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.txt a:hover {
+    color: #ff4500;
+}
+
+/*contact form*/
+{box-sizing: border-box;}
+
+/*open contact button*/
+.open-btn {
+    width: 500px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.9em;
+    letter-spacing: 0.8em;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*hidden by default*/
+.popup {
+    display: none;
+    position: fixed;
+    /*bottom: 0;*/
+    border: 3px solid #ff4500;
+    z-index: 9;
+}
+
+/*form container styles*/
+.form-div {
+    height: 460px;
+    opacity: 1;
+    background-color: black;
+}
+
+.form-container {
+    height: 400px;
+    max-width: 350px;
+    max-height: 500px;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    color: #fff;
+    background-color: black;
+    opacity: 1;
+}
+
+.form-container input[type=text] {
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    background-color: darkgray;
+}
+
+#Message {
+    height: 100px;
+}
+
+/*focus on inputs do something-*/
+
+/*submit styling*/
+.form-container .btn {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/*add red background color to cancel button*/
+.form-container .cancel {
+    width: 100%;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: #ff4500;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/*add some hover effects to buttons*/
+.form-container .btn:hover, .open-btn:hover, .cancel:hover {
+    opacity: 1;
+}
+
+/*footer styling*/
+footer {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+
+.footer p {
+    text-align: left;
+    font-size: .9em;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.footer a {
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer li {
+    padding: 10px;
+}
+
+.footer a:hover {
+    color: #ff4500;
+}
