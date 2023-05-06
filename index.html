@@ -25,9 +25,9 @@
 
         <!--SIDE PANEL-->
         <div id="sidePanel" class="panel">
-            <button class="open-panel-btn" onclick="openPanel()">>_</button>
-
-            <a href="javascript:void(0)" class="close-panel-btn" onclick="closePanel()">&times;</a>
+            <p class="openbtn" onclick="openPane()">>_</p>
+            <br>
+            <a href="javascript:void(0)" class="closebtn" onclick="closePane()">&times;</a>
         </div>
 
         <!--END SIDE PANEL-->
@@ -38,9 +38,9 @@
                 <!--<h2 class="blink"> <span class="sm-blink">>_</span> User:Laurel-Gooden</h2>-->
             </div>
             <div class="portfolio-heading">
-                <hr>
-                <h1 class="blink">Portfolio<span class="sm-blink">|</span></h1>
-                <hr>
+                <h3 class="center-col">Hi</h3>
+                <h2 class="center-col">My Name Is</h2>
+                <h2 class="center-col">Laurel</h2>
             </div>
             <!--dinosaur gif-->
             <div class="center-col">
@@ -75,16 +75,15 @@
         <br>
         
         <!--GIT-->
-        <div id="projects" class="center-col">
+        <div id="projects" class="center-col keys">
             <div class="title-keys container">
                 <img src="./imgs/letters/G.png" alt="letter g" onclick="clicky()">
                 <img src="imgs/letters/I.png" alt="letter i" onclick="clicky()">
                 <img src="imgs/letters/T.png" alt="letter t" onclick="clicky()">
             </div>
             <br>
-           
         </div>
-        <div class="center-col info">
+        <div class="center-col info projects-txt">
             <div class="git-logo">
                 <img src="./imgs/github-logo.png" alt="git-logo" onclick="">
             </div>
@@ -98,7 +97,7 @@
         <br>
 
         <!--CONTACT-->
-        <div id="contact" class="center-col">
+        <div id="contact" class="center-col keys">
             <div class="title-keys container">
                 <img src="./imgs/letters/C.png" alt="letter c" onclick="clicky()">
                 <img src="imgs/letters/O.png" alt="letter o" onclick="clicky()">
@@ -154,5 +153,6 @@
         <!--FOOTER-->
 
         <script src="js/jquery.js"></script>
+        <script>src="//code.jquery.com/jquery-1.11.1.min.js"</script>
     </body>
 </html>
