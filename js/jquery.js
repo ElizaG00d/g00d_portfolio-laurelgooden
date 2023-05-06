@@ -7,15 +7,15 @@ $(document).ready(function(){
 });
 
 //hide and show panels
-$("#about").on("click", function(){
+$("#about, .about").on("click", function(){
     $("div.about-txt").slideToggle();
 });
 
-$("#projects").on("click", function(){
+$("#projects, .projects").on("click", function(){
     $("div.projects-txt").slideToggle();
 });
 
-$("#contact").on("click", function(){
+$("#contact, .contact").on("click", function(){
     $("div.form-div").slideToggle();
 });
 

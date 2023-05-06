@@ -15,9 +15,9 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" class="about">About</a></li>
+                    <li><a href="#projects" class="projects">Projects</a></li>
+                    <li><a href="#contact" class="contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,6 +42,9 @@
                 <h2 class="center-col">My Name Is</h2>
                 <h2 class="center-col">Laurel</h2>
             </div>
+            <div class="logo">
+
+            </div>
             <!--dinosaur gif-->
             <div class="center-col">
                 <iframe src="https://giphy.com/embed/KSc4LKJ0xlB3a" width="380" height="142" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/KSc4LKJ0xlB3a">via GIPHY</a></p>
@@ -54,6 +57,13 @@
             <!--apparently also fixed the padding/margin error-->
         
         <!--ABOUT-->
+        <div class="info about-txt">
+            <p>I'm a well versed Front-End Web Developer with a background
+                in Graphic Design and a certification from The Tech Academy.</p>
+                <br>
+            <p>I've taken classes in JavaScript and Front-End Web Development and find myself learning
+                new solutions and creations with these languages every day.</p>
+        </div>
         <div id="about" class="center-col">
             <div class="title-keys container">
                 <img src="./imgs/letters/A.png" alt="letter a" onclick="clicky()"> <!--insert images in this section-->
@@ -63,26 +73,11 @@
                 <img src="imgs/letters/T.png" alt="letter t" onclick="clicky()">
             </div>
         </div>
-        <div class="info about-txt">
-            <p>I'm a well versed Front-End Web Developer with a background
-                in Graphic Design and a certification from The Tech Academy.</p>
-                <br>
-            <p>I've taken classes in JavaScript and Front-End Web Development and find myself learning
-                new solutions and creations with these languages every day.</p>
-        </div>
         <!--/ABOUT-->
         
         <br>
         
         <!--GIT-->
-        <div id="projects" class="center-col keys">
-            <div class="title-keys container">
-                <img src="./imgs/letters/G.png" alt="letter g" onclick="clicky()">
-                <img src="imgs/letters/I.png" alt="letter i" onclick="clicky()">
-                <img src="imgs/letters/T.png" alt="letter t" onclick="clicky()">
-            </div>
-            <br>
-        </div>
         <div class="center-col info projects-txt">
             <div class="git-logo">
                 <img src="./imgs/github-logo.png" alt="git-logo" onclick="">
@@ -91,6 +86,14 @@
             <div class="txt">
                 <p>All of my work involved in my training is kept on my <a href="">GitHub</a></p>
             </div>
+        </div>
+        <div id="projects" class="center-col keys">
+            <div class="title-keys container">
+                <img src="./imgs/letters/G.png" alt="letter g" onclick="clicky()">
+                <img src="imgs/letters/I.png" alt="letter i" onclick="clicky()">
+                <img src="imgs/letters/T.png" alt="letter t" onclick="clicky()">
+            </div>
+            <br>
         </div>
         <!--/GIT-->
 
@@ -139,15 +142,7 @@
         <!--FOOTER-->
         <footer class="footer">
 
-            <p>Laurel Gooden</p>
-
-            <div>
-                <ul>
-                    <li><a href="">GitHub</a></li>
-                    <li><a href="">LinkedIn</a></li>
-                    <li><a href="">Other Projects</a></li>
-                </ul>
-            </div>
+            <!--add icons for contact info-->
             
         </footer>
         <!--FOOTER-->
