@@ -12,7 +12,8 @@ body {
     width: 100%;
     margin: auto;
     backdrop-filter: blur(7px);
-} /*opacity: 0.6;*/
+    background-color: black;
+}   
 
 h1, h2, h3 {
     color: #fff;
@@ -40,9 +41,13 @@ a:hover {
 
 /*IMG STYLING, general and title keys*/
 .keyboard-backdrop {
+    height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
     background-image: url("../imgs/crop-keyboard.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .keyboard-backdrop::after {
@@ -362,6 +367,8 @@ a:hover {
 
 /*----------------------footer styling-------------------------*/
 footer {
+    margin: 0;
+    padding: 0;
     display: block;
     width: 100%;
     height: 80px;
