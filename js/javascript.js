@@ -12,3 +12,5 @@ function formClose() {
 
 //clicking sound//
 let clicky = () => new Audio("./audio/../audio/mixit-single-key-press.wav").play();
+
+//Advanced JS Course Additions
