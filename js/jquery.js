@@ -1,8 +1,8 @@
 //ADVANCED JS ADDITIONS
 
 //onload settings for panels
-$(document).ready(function(){
-    $("div.info").hide();
+//$(document).ready(function(){
+    //$("div.info").hide();
     //$("div.panel.side").hide();
 });
 
