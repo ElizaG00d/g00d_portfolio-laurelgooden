@@ -13,4 +13,11 @@ function formClose() {
 //clicking sound//
 let clicky = () => new Audio("./audio/../audio/mixit-single-key-press.wav").play();
 
-//Advanced JS Course Additions
+//side panel bit
+function openPanel() {
+    document.getElementById("sidePanel").style.width = "250px";
+}
+
+function closePanel() {
+    document.getElementById("sidePanel").style.width = "30px";
+}

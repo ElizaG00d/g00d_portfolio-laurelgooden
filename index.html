@@ -6,32 +6,36 @@
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <script src="js/javascript.js" defer></script> <!--defer for now-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     </head>
     <body>
         
-         <!--NAVBAR IMG?-->
-        <div class="img-nav">
-
-        </div>
-        <!--NAVBAR IMG END-->
-
         <!--NAVBAR-->
         <div>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#home">>_ Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#git">GitHub</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
         <!--NAVBAR END-->
+
+        <!--SIDE PANEL-->
+        <div id="sidePanel" class="panel">
+            <button class="open-panel-btn" onclick="openPanel()">>_</button>
+
+            <a href="javascript:void(0)" class="close-panel-btn" onclick="closePanel()">&times;</a>
+        </div>
+
+        <!--END SIDE PANEL-->
         
         <!--"HOME" COVER-->
         <div id="home" class="cover">
             <div>
-                <h2 class="blink"> <span class="sm-blink">>_</span> User:Laurel-Gooden</h2>
+                <!--<h2 class="blink"> <span class="sm-blink">>_</span> User:Laurel-Gooden</h2>-->
             </div>
             <div class="portfolio-heading">
                 <hr>
@@ -71,7 +75,7 @@
         <br>
         
         <!--GIT-->
-        <div id="git" class="center-col">
+        <div id="projects" class="center-col">
             <div class="title-keys container">
                 <img src="./imgs/letters/G.png" alt="letter g" onclick="clicky()">
                 <img src="imgs/letters/I.png" alt="letter i" onclick="clicky()">
@@ -149,6 +153,6 @@
         </footer>
         <!--FOOTER-->
 
-        
+        <script src="js/jquery.js"></script>
     </body>
 </html>
