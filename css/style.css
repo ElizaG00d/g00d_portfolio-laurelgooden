@@ -9,8 +9,8 @@ html {
 
 body {
     min-width: fit-content;
+    width: 100%;
     margin: auto;
-    background-image: url(../imgs/pexels-hitarth-jadhav-220357.jpg);
     backdrop-filter: blur(7px);
 } /*opacity: 0.6;*/
 
@@ -39,6 +39,16 @@ a:hover {
 /*END GENERAL SYTLING*/
 
 /*IMG STYLING, general and title keys*/
+.keyboard-backdrop {
+    margin: 0;
+    padding: 0;
+    background-image: url("../imgs/crop-keyboard.jpg");
+}
+
+.keyboard-backdrop::after {
+    clear: both;
+}
+
 .title-keys img {
     margin: 0 auto;
     padding: 3px;
