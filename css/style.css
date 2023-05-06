@@ -103,7 +103,7 @@ a:hover {
 
 /*SIDE PANEL*/
 .panel {
-    height: 55%;
+    margin-top: 20px;
     width: 27px;
     position: fixed;
     z-index: 510;
@@ -165,9 +165,9 @@ a:hover {
 
 /*gif*/
 .cover a {
-    text-decoration: none;
+    /*text-decoration: none;
     font-size: small;
-    visibility: hidden;
+    visibility: hidden;*/
 }
 
 .cover iframe {
@@ -225,13 +225,12 @@ a:hover {
 
 .info {
     margin: 0 auto;
+    margin-bottom: 15px;
     height: 400px;
-    width: 850px;
-    background-color: black;
-    opacity: 0.8;
-    border: 2px solid white;
-    border-radius: 20px;
-    box-shadow: 3px 3px 3px rgba(255,255,255, 0.8);
+    width: 99%;
+    background-color: #0E0F19;
+    border: 1px solid white;
+    border-radius: 10px;
 }
 
 .txt {
