@@ -273,10 +273,20 @@ a:hover {
 /*------------/CENTER COL-------------*/
 
 /*--------ABOUT-----------*/
+.pfp {
+    border-radius: 50%;
+    width: 175px;
+    margin: auto;
+}
+
+.greet {
+    padding-top: 10px;
+}
+
 .about-txt p {
     width: 60%;
     margin: 0 auto;
-    padding-top: 65px;
+    padding-top: 25px;
 }
 
 .socials-about a {
