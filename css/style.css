@@ -325,10 +325,9 @@ a:hover {
 /*hidden by default*/
 .popup {
     display: none;
-    position: fixed;
     /*bottom: 0;*/
-    border: 3px solid #ff4500;
-    z-index: 9;
+    border: 3px solid white;
+    z-index: 550;
 }
 
 /*form container styles*/
